@@ -4,6 +4,8 @@
 
 body {
     margin-top: 30px;
+    border: 2px solid rgb(47, 51, 54);
+    padding: 20px;
 }
 
 .wd-size-15 {
