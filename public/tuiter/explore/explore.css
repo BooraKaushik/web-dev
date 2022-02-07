@@ -2,12 +2,6 @@
     background-color: black;
 }
 
-body {
-    margin-top: 30px;
-    border: 2px solid rgb(47, 51, 54);
-    padding: 20px;
-}
-
 .wd-size-15 {
     font-size: 15px;
 }
@@ -18,6 +12,10 @@ body {
 
 .wd-color-white {
     color: white;
+}
+
+.wd-text-size-12 {
+    font-size: 12px;
 }
 
 .wd-color-gray {
@@ -134,4 +132,12 @@ hr {
 
 .wd-user-image {
     border-radius: 25px;
+}
+
+.wd-border-lines {
+    border: 2px solid rgb(47, 51, 54);
+}
+
+.wd-pt-30 {
+    padding-top: 30px;
 }
