@@ -37,6 +37,7 @@ body {
 
 .wd-post {
     border: 1px solid rgb(47, 51, 54);
+    z-index: 1;
     padding: 16px 12px;
     display: flex;
     flex-wrap: nowrap;
@@ -83,6 +84,7 @@ body {
     margin: 12px 12px 0px 12px;
     border: 2px solid rgb(47, 51, 54);
     width: 504px;
+    z-index: -1;
 }
 
 .wd-subject-head {
@@ -108,4 +110,14 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.wd-color-pink {
+    color: rgb(224, 37, 94);
+}
+
+.wd-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
