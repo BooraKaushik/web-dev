@@ -121,3 +121,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.wd-color-gray {
+    color: rgb(47, 51, 54);
+}
