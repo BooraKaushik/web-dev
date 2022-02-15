@@ -2,6 +2,10 @@
     background-color: black;
 }
 
+.wd-me-12 {
+    margin-right: 12px;
+}
+
 .wd-size-15 {
     font-size: 15px;
 }
@@ -42,6 +46,10 @@
     padding: 0px 10px;
 }
 
+.wd-p-16 {
+    padding: 16px;
+}
+
 .wd-px-30 {
     padding-left: 30px;
 }
@@ -76,10 +84,6 @@ input:focus {
 
 .wd-ms-20 {
     margin: 0px 10px 0px 20px;
-}
-
-.wd-width-10 {
-    width: 10%;
 }
 
 .wd-width-90 {
@@ -132,6 +136,7 @@ hr {
 
 .wd-user-image {
     border-radius: 25px;
+    margin-right: 16px;
 }
 
 .wd-border-lines {

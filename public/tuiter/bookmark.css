@@ -10,7 +10,7 @@ body {
 
 .wd-heading {
     border: 1px solid rgb(47, 51, 54);
-    padding: 16px 12px;
+    padding: 12px 16px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -38,7 +38,7 @@ body {
 .wd-post {
     border: 1px solid rgb(47, 51, 54);
     z-index: 1;
-    padding: 16px 12px;
+    padding: 12px 16px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -70,6 +70,7 @@ body {
 }
 
 .wd-data {
+    font-size: 15px;
     max-width: 506px;
     padding: 12px 16px 0px 12px;
 }
@@ -113,7 +114,7 @@ body {
 }
 
 .wd-color-pink {
-    color: rgb(224, 37, 94);
+    color: red;
 }
 
 .wd-flex {
@@ -123,5 +124,5 @@ body {
 }
 
 .wd-color-gray {
-    color: rgb(98, 100, 102);
+    color: lightgray;
 }
