@@ -1,4 +1,4 @@
-const BookmarkItems = (post) => { return (`
+const PostList = (post) => { return (`
 <div class="wd-post d-flex flex-row  align-item-start justify-content-start" style="width:100%">
 <div><img class="wd-user-image" src="${post.dp}" alt="Rocket Image" width="48px" height="48px"></div>
 <div>
@@ -46,4 +46,4 @@ const BookmarkItems = (post) => { return (`
     </div>
 </div>
 </div>`); };
-export default BookmarkItems;
+export default PostList;

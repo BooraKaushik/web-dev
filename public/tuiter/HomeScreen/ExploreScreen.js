@@ -1,4 +1,4 @@
-import book from "../Bookmarks/index.js";
+import book from "../PostItems/index.js";
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostSummaryList from "../PostSummaryList/index.js";
 
