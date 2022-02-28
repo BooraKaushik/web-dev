@@ -1,0 +1,4 @@
+const Bookmarks = [{ dp: '../explore/spacex.jfif', userName: 'Elon Musk', handle: '@elonmusk', time: '23h', p1: 'amazing show about <a href=#>@Inspiration4x</a> mission!', tweetPic: '../inspiration4.jpg', h1: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site', p2: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ..<br><i class="fa fa-link"></i>  netflix.com', comments: '4.2k', retweet: '3.5k', likes: '37.5k' },
+    { dp: '../NYP.png', userName: 'New York Post', handle: '@nypost', time: '23h', p1: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk <a href="#">trib.al/nx2Gfaq</a>', tweetPic: '../post1.jpg', comments: '965', retweet: '2.4k', likes: '4k' },
+];
+export default Bookmarks;
