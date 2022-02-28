@@ -207,3 +207,7 @@ body {
 .wd-color-gray {
     color: lightgray;
 }
+
+a {
+    text-decoration: none;
+}
