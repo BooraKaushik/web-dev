@@ -86,7 +86,3 @@ body {
 .wd-bgcolor-gray {
     background-color: rgb(34, 37, 39);
 }
-
-.list-group-item.list-group-item-action:hover {
-    background-color: black;
-}
