@@ -6,6 +6,10 @@ const NavigationSidebar = ({ parameter = "home" }) => {
   const padding = {
     paddingLeft: "12px",
   };
+  const borderRad = {
+    width: "100%",
+    borderRadius: "16px",
+  };
   return (
     <>
       <div className="row">
@@ -97,7 +101,10 @@ const NavigationSidebar = ({ parameter = "home" }) => {
             <span className="d-none d-xl-inline ms-1 fa-in">More</span>
           </a>
         </div>
-        <button className="btn btn-primary mt-2 wd-button-tweet px-0">
+        <button
+          style={borderRad}
+          className="btn btn-primary mt-2 wd-button-tweet px-0"
+        >
           Tweet
         </button>
       </div>

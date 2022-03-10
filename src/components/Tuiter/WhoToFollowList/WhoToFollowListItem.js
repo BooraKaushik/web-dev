@@ -12,7 +12,9 @@ const WhoToFollowListItem = ({
   const curvedImage = {
     borderRadius: "250px",
   };
-
+  const borderRad = {
+    borderRadius: "16px",
+  };
   return (
     <div className="list-group-item">
       <div className="row">
@@ -38,7 +40,10 @@ const WhoToFollowListItem = ({
           <div className=" fa-in">@{who.handle}</div>
         </span>
         <span className="col-4 my-auto">
-          <button className="btn btn-primary wd-button-tweet my-auto px-0">
+          <button
+            style={borderRad}
+            className="btn btn-primary wd-button-tweet my-auto px-0"
+          >
             follow
           </button>
         </span>
