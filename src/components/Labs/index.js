@@ -9,7 +9,7 @@ const Labs = () => {
   return (
     <>
       <h1>Labs</h1>
-      <Link to="/hello">Hello</Link> |<Link to="/tuiter">Tuiter</Link>
+      <Link to="/hello">Hello</Link> |<Link to="/tuiter/home">Tuiter</Link>
       <Classes />
       <Styles />
       <ConditionalOutput />
