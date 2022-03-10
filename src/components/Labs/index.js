@@ -10,10 +10,10 @@ const Labs = () => {
     <>
       <h1>Labs</h1>
       <Link to="/hello">Hello</Link> |<Link to="/tuiter">Tuiter</Link>
-      <Classes/>
-      <Styles/>
-      <ConditionalOutput/>
-      <TodoList/>
+      <Classes />
+      <Styles />
+      <ConditionalOutput />
+      <TodoList />
     </>
   );
 };
