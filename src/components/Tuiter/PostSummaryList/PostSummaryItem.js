@@ -41,7 +41,7 @@ const PostSummaryItem = ({
           )}
         </div>
         <div className="col-3 col-md-2 my-auto">
-          <img src={post.image} alt="React Image" className="img-fluid" />
+          <img src={post.image} alt="React" className="img-fluid" />
         </div>
       </div>
     </div>

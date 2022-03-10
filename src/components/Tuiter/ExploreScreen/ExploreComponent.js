@@ -72,11 +72,7 @@ const ExploreComponent = () => {
       </div>
 
       <div className="position-relative wd-border-gray">
-        <img
-          src={"/images/spacex.jfif"}
-          alt="Spacex Image"
-          className="img-fluid"
-        />
+        <img src={"/images/spacex.jfif"} alt="Spacex" className="img-fluid" />
         <h3 className="position-absolute bottom-0 start-0 px-3 py-2 wd-color-white">
           Space X's Starship
         </h3>
