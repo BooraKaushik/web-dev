@@ -4,7 +4,7 @@ const PostList = ({
     userName: "New York Post",
     handle: "@nypost",
     time: "23h",
-    p1: 'Grimes seen reading Karl Marx following split with world"s richest man Elon Musk <a href="#">trib.al/nx2Gfaq</a>',
+    p1: 'Grimes seen reading Karl Marx following split with world"s richest man Elon Musk <a href="">trib.al/nx2Gfaq</a>',
     tweetPic: "../post1.jpg",
     comments: "965",
     retweet: "2.4k",
@@ -24,7 +24,7 @@ const PostList = ({
           <img
             className="wd-user-image"
             src={post.dp}
-            alt="Rocket Image"
+            alt="Rocket"
             width="48px"
             height="48px"
           />
@@ -64,7 +64,7 @@ const PostList = ({
               width="500px"
               height="264px"
               src={post.tweetPic}
-              alt="Example Image"
+              alt="Example"
             />
             {post.h1 && post.p2 && (
               <>
@@ -77,7 +77,7 @@ const PostList = ({
           </div>
           <div className="wd-icon">
             <div className="wd-flex">
-              <a href="#">
+              <a href="%PUBLIC_URL%">
                 <i className=" wd-color-gray fa fa-comment"></i>
               </a>
               <span className="wd-icon-number wd-color-gray">
@@ -85,7 +85,7 @@ const PostList = ({
               </span>
             </div>
             <div className="wd-flex">
-              <a href="#">
+              <a href="%PUBLIC_URL%">
                 <i className="material-icons wd-color-gray">loop</i>
               </a>
               <span className="wd-icon-number wd-color-gray">
@@ -93,13 +93,13 @@ const PostList = ({
               </span>
             </div>
             <div className="wd-flex">
-              <a href="#">
+              <a href="%PUBLIC_URL%">
                 <i className=" wd-color-pink fa fa-heart"></i>
               </a>
               <span className="wd-icon-number wd-color-pink">{post.likes}</span>
             </div>
             <div className="wd-flex">
-              <a href="#">
+              <a href="%PUBLIC_URL%">
                 <i
                   className="material-icons wd-color-gray"
                   style={{ margin: "auto" }}
