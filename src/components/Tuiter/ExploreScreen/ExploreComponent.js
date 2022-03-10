@@ -70,6 +70,7 @@ const ExploreComponent = () => {
           </li>
         </ul>
       </div>
+
       <div className="position-relative wd-border-gray">
         <img
           src={"/images/spacex.jfif"}
