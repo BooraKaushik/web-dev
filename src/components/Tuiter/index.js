@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebarComponent";
-import WhoToFollowList from "./WhoToFollowList/WhoToFollowList";
+// import WhoToFollowList from "./WhoToFollowList/WhoToFollowList";
 
 const Tuiter = () => {
   return (
@@ -14,7 +14,7 @@ const Tuiter = () => {
         </div>
         <div className="col-10 col-lg-6 ps-3 pe-0"></div>
         <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-          <WhoToFollowList />
+          {/* <WhoToFollowList /> */}
         </div>
       </div>
     </>
