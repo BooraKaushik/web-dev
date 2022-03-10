@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const NavigationSidebar = ({ parameter = "home" }) => {
   const iconSize = {
     fontSize: "8px",
@@ -14,23 +15,20 @@ const NavigationSidebar = ({ parameter = "home" }) => {
     <>
       <div className="row">
         <div className="list-group col-12 col-lg-12 col-xl-12 pe-0">
-          <a
-            href="../home.html"
-            className="list-group-item list-group-item-action"
-          >
+          <Link to="/" className="list-group-item list-group-item-action">
             <i className="fab fa-twitter fa-in"></i>
-          </a>
-          <a
-            href="../HomeScreen/explore.html"
+          </Link>
+          <Link
+            to="/tuiter/home"
             className={`list-group-item list-group-item-action ${
               parameter === "home" ? " active" : ""
             }`}
           >
             <i className="fa fa-home fa-in"></i>
             <span className="d-none d-xl-inline ms-1 fa-in">Home</span>
-          </a>
-          <a
-            href="../ExploreScreen/explore.html"
+          </Link>
+          <Link
+            to="/tuiter/explore"
             className={`list-group-item list-group-item-action${
               parameter === "explore" ? " active" : ""
             }`}
@@ -38,7 +36,7 @@ const NavigationSidebar = ({ parameter = "home" }) => {
           >
             <i className="fa fa-hashtag fa-in"></i>
             <span className="d-none d-xl-inline ms-1 fa-in">Explore</span>
-          </a>
+          </Link>
           <a
             href="../notifications.html"
             className={`list-group-item list-group-item-action${
