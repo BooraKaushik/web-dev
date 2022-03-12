@@ -11,12 +11,16 @@ const PostSummaryItem = ({
   const iconSize = {
     fontSize: "8px",
   };
+  const title = {
+    fontSize: "16px",
+    color: "white",
+  };
   const borderGray = { border: "1px solid rgb(41, 37, 37)" };
   const colorWhite = { color: "white" };
   return (
     <div style={borderGray} className="list-group-item  wd-border-gray">
       <div className="row">
-        <div className="col-9 col-lg-10">
+        <div className="col-9 col-md-10">
           <p style={colorWhite} className="text-secondary mb-1">
             {post.topic}
           </p>
@@ -33,14 +37,14 @@ const PostSummaryItem = ({
             </span>
             <div className="text-secondary">&nbsp;&nbsp;- {post.time}</div>
           </div>
-          <p style={colorWhite}>{post.title}</p>
+          <p style={title}>{post.title}</p>
           {post.tweets ? (
             <p className="text-secondary">{post.tweets} tweets</p>
           ) : (
             <></>
           )}
         </div>
-        <div className="col-3 col-md-2 my-auto">
+        <div className="col-3 col-md-2 my-auto p-0 pe-1">
           <img src={post.image} alt="React" className="img-fluid" />
         </div>
       </div>
