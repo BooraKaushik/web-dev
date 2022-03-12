@@ -9,20 +9,25 @@ const ExploreComponent = () => {
             <div className="input-group col-10">
               <span
                 style={{
-                  backgroundColor: "rgb(34, 37, 39)",
+                  backgroundColor: "white",
                   borderRadius: "16px 0px 0px 16px",
                 }}
                 className="wd-bgcolor-gray input-group-text wd-border-16"
                 id="wd-search-icon"
               >
-                <i className="fas fa-search  fa-in"></i>
+                <i
+                  style={{
+                    color: "gray",
+                  }}
+                  className="fas fa-search  fa-in"
+                ></i>
               </span>
               <input
                 style={{
                   borderRadius: "0px 16px 16px 0px",
                   borderColor: "transparent",
                   borderLeft: "0px",
-                  paddingLeft: "8px",
+                  paddingLeft: "0px",
                 }}
                 type="text"
                 className="wd-bgcolor-gray wd-search form-control wd-border-16"
