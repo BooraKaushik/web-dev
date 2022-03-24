@@ -29,7 +29,12 @@ const ProfileScreen = () => {
         className="position-relative"
         style={{ width: "100%", height: "200px" }}
       >
-        <img src={profile.bannerPicture} height="100%" width="100%" />
+        <img
+          src={profile.bannerPicture}
+          height="100%"
+          width="100%"
+          alt={profile.lastName}
+        />
 
         <div
           className="rounded-circle position-absolute top-100 translate-middle"
@@ -41,6 +46,7 @@ const ProfileScreen = () => {
             src={profile.profilePicture}
             height="100%"
             width="100%"
+            alt={profile.lastName}
           />
         </div>
       </div>

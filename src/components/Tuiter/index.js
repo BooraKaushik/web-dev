@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebarComponent";
 import { createStore, combineReducers } from "redux";
 import who from "./reducers/who";
-import { Provider, useSelector } from "react-redux";
+import { Provider } from "react-redux";
 import WhoToFollowList from "./WhoToFollowList";
 import tuitReducer from "./reducers/tuits-reducer";
 import NavigationSidebarReducer from "./reducers/NavigationSideBarReducer";

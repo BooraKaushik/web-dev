@@ -41,6 +41,7 @@ const EditProfile = () => {
           src={data.bannerPicture}
           height="100%"
           width="100%"
+          alt={data.lastName}
         />
 
         <div className="card-img-overlay">
@@ -60,6 +61,7 @@ const EditProfile = () => {
             src={data.profilePicture}
             height="100%"
             width="100%"
+            alt={data.lastName}
           />
           <div className="card-img-overlay">
             <i className="card-text fa fa-camera" style={{ margin: "40%" }}></i>
