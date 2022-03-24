@@ -136,10 +136,10 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 }
-
+/* 
 .wd-user-image {
   border-radius: 24px;
-}
+} */
 
 .wd-user-handle {
   font-size: 15px;
@@ -175,7 +175,6 @@ body {
   margin: 12px 12px 0px 12px;
   border: 2px solid rgb(47, 51, 54);
   width: 504px;
-  z-index: 1;
 }
 
 .wd-subject-head {

@@ -1,8 +1,14 @@
 import NavigationSidebar from "../NavigationSidebarComponent";
 import PostSummaryList from "../PostSummaryList";
 import PostItems from "../PostItems";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 const HomeScreen = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch({ type: "set-parameter", changeState: "home" });
+  });
   return (
     <>
       <div class="row mt-2">

@@ -1,6 +1,12 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import PostSummaryList from "../PostSummaryList";
 
 const ExploreComponent = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch({ type: "set-parameter", changeState: "explore" });
+  });
   return (
     <>
       <div className="wd-border-gray">

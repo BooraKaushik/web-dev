@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-const NavigationSidebar = ({ parameter = "home" }) => {
+const NavigationSidebar = () => {
+  const parameter = useSelector((state) => state.NavigationSidebarReducer);
   const iconSize = {
     fontSize: "8px",
   };
@@ -19,7 +21,7 @@ const NavigationSidebar = ({ parameter = "home" }) => {
             <i className="fab fa-twitter fa-in"></i>
           </Link>
           <Link
-            to="/tuiter/home"
+            to="/tuiter/"
             className={`list-group-item list-group-item-action ${
               parameter === "home" ? " active" : ""
             }`}
@@ -73,15 +75,15 @@ const NavigationSidebar = ({ parameter = "home" }) => {
             <i className="fa fa-list fa-in"></i>
             <span className="d-none d-xl-inline ms-1 fa-in">Items</span>
           </a>
-          <a
-            href="../profile.html"
+          <Link
+            to="/tuiter/profile"
             className={`list-group-item list-group-item-action${
               parameter === "profile" ? " active" : ""
             }`}
           >
             <i className="fa fa-user fa-in"></i>
             <span className="d-none d-xl-inline ms-1 fa-in">Profile</span>
-          </a>
+          </Link>
           <a
             style={padding}
             href="../more.html"
