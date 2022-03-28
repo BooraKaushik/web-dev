@@ -45,10 +45,10 @@ const EditProfile = () => {
         />
 
         <div className="card-img-overlay">
-          <i
-            className="card-text fa fa-camera"
-            style={{ margin: "12% 50%" }}
-          ></i>
+          <div className="card-text " style={{ margin: "12% 45%" }}>
+            <i className="fa fa-camera"></i>
+            <i className="fa fa-times ms-4"></i>
+          </div>
         </div>
 
         <div
@@ -71,76 +71,108 @@ const EditProfile = () => {
       <div className="py-4"></div>
 
       <div className="p-2">
-        <div className="form-group">
-          <label for="fName">First Name</label>
+        <div className="form-floating my-3">
           <input
             className="form-control"
             id="fName"
             type="text"
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid grey",
+            }}
             onChange={(event) =>
               updateData({ ...data, firstName: event.target.value })
             }
             value={data.firstName}
           />
+          <label for="fName">First Name</label>
         </div>
-        <div className="form-group">
-          <label for="lName">Last Name</label>
+        <div className="form-floating my-3">
           <input
             className="form-control"
             id="lName"
             type="text"
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid grey",
+            }}
             onChange={(event) => {
               updateData({ ...data, lastName: event.target.value });
             }}
             value={data.lastName}
           />
+          <label for="lName">Last Name</label>
         </div>
-        <div className="form-group">
-          <label for="bio">Bio</label>
+        <div className="form-floating my-3">
           <textarea
             className="form-control"
             id="bio"
+            style={{
+              backgroundColor: "black",
+              height: "10%",
+              color: "white",
+              border: "1px solid grey",
+            }}
             onChange={(event) =>
               updateData({ ...data, bio: event.target.value })
             }
             defaultValue={data.bio}
           ></textarea>
+
+          <label for="bio">Bio</label>
         </div>
-        <div className="form-group">
-          <label for="location">Location</label>
+        <div className="form-floating my-3">
           <input
             className="form-control"
             id="location"
             type="text"
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid grey",
+            }}
             onChange={(event) =>
               updateData({ ...data, location: event.target.value })
             }
             value={data.location}
           />
+          <label for="location">Location</label>
         </div>
-        <div className="form-group">
-          <label for="site">Website</label>
+        <div className="form-floating my-3">
           <input
             className="form-control"
             id="site"
             type="url"
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid grey",
+            }}
             onChange={(event) =>
               updateData({ ...data, website: event.target.value })
             }
             value={data.website}
           />
+          <label for="site">Website</label>
         </div>
-        <div className="form-group">
-          <label for="dob">Date of Birth</label>
+        <div className="form-floating my-3">
           <input
             className="form-control"
             id="dob"
             type="date"
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid grey",
+            }}
             onChange={(event) =>
               updateData({ ...data, dateOfBirth: event.target.value })
             }
             value={new Date(data.dateOfBirth).toISOString().split("T")[0]}
           />
+          <label for="dob">Date of Birth</label>
         </div>
       </div>
     </div>
