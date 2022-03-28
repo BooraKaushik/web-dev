@@ -43,7 +43,7 @@ const TuitListItem = ({
     <>
       <div
         className="wd-post d-flex flex-row  align-item-start justify-content-start"
-        style={{ width: "100%" }}
+        style={{ width: "100%", backgroundColor: "#222" }}
       >
         <div>
           <img
@@ -52,6 +52,7 @@ const TuitListItem = ({
             alt="Rocket"
             width="48px"
             height="48px"
+            style={{ borderRadius: "24px" }}
           />
         </div>
         <div style={{ width: "100%" }}>

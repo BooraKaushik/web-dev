@@ -25,6 +25,20 @@ const ProfileScreen = () => {
 
   return (
     <div>
+      <div className="d-flex">
+        <Link to="/tuiter/profile">
+          <i
+            style={{ fontSize: "20px" }}
+            className="mx-2 mt-2 text-white fa fa-arrow-left me-3"
+          ></i>
+        </Link>
+        <div>
+          <h5 className="mb-0">
+            {profile.firstName} {profile.lastName}
+          </h5>
+          <p className="mb-0">3400 tweets</p>
+        </div>
+      </div>
       <div
         className="position-relative"
         style={{ width: "100%", height: "200px" }}
