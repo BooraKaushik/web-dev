@@ -31,10 +31,6 @@ const TuitListItem = ({
   const deleteTuit = (tuit) => {
     dispatch({ type: "delete-tuit", tuit });
   };
-  const likeTuit = (tuit) => {
-    dispatch({ type: "like-tuit", tuit });
-  };
-
   const iconSize = {
     fontSize: "8px",
   };
