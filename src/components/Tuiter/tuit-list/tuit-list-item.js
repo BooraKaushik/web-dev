@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import TuitStats from "./tuit-stats";
 
 const TuitListItem = ({
   post = {
@@ -119,38 +120,7 @@ const TuitListItem = ({
               ></iframe>
             )}
           </div>
-          <div className="wd-icon">
-            <div className="wd-flex">
-              <i className=" wd-color-gray fa fa-comment"></i>
-              <span className="wd-icon-number wd-color-gray">
-                {post.stats.comments}
-              </span>
-            </div>
-            <div className="wd-flex">
-              <i className="material-icons wd-color-gray">loop</i>
-              <span className="wd-icon-number wd-color-gray">
-                {post.stats.retuits}
-              </span>
-            </div>
-            <div onClick={() => likeTuit(post)} className="wd-flex">
-              <i
-                className={`${
-                  post.liked ? " wd-color-pink " : "wd-color-gray "
-                }fa fa-heart`}
-              ></i>
-              <span className={` wd-color-gray wd-icon-number`}>
-                {post.stats.likes}
-              </span>
-            </div>
-            <div className="wd-flex">
-              <i
-                className="material-icons wd-color-gray"
-                style={{ margin: "auto" }}
-              >
-                file_upload
-              </i>
-            </div>
-          </div>
+          <TuitStats tuit={post} />
         </div>
       </div>
     </>
