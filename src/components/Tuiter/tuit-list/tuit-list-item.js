@@ -29,8 +29,6 @@ const TuitListItem = ({
   },
 }) => {
   const dispatch = useDispatch();
-<<<<<<< HEAD
-=======
   const deleteTuit = (tuit) => {
     dispatch({ type: "delete-tuit", tuit });
   };
@@ -38,7 +36,6 @@ const TuitListItem = ({
     dispatch({ type: "like-tuit", tuit });
   };
 
->>>>>>> parent of e5a7975 (a7 Redux sp22)
   const iconSize = {
     fontSize: "8px",
   };
