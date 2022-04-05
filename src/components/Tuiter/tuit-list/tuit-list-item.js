@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { deleteTuit } from "./actions/tuits-actions";
 import TuitStats from "./tuit-stats";
 
 const TuitListItem = ({
@@ -28,9 +29,6 @@ const TuitListItem = ({
   },
 }) => {
   const dispatch = useDispatch();
-  const deleteTuit = (tuit) => {
-    dispatch({ type: "delete-tuit", tuit });
-  };
   const iconSize = {
     fontSize: "8px",
   };
@@ -56,7 +54,9 @@ const TuitListItem = ({
             <div>
               <span className="wd-user-name">
                 <strong>
-                  {post.postedBy.username}
+                  {post.postedBy &&
+                    post.postedBy.username &&
+                    post.postedBy.username}
                   {post.verified && (
                     <span style={iconSize} className="fa-stack fa-1x wd-size-8">
                       <i className="fas fa-circle fa-stack-2x fa-inverse"></i>
@@ -69,10 +69,15 @@ const TuitListItem = ({
                 </strong>
                 &nbsp;
               </span>
-              <span className="wd-user-handle">@{post.handle}</span>
+              {post.handle && (
+                <span className="wd-user-handle">@{post.handle}</span>
+              )}
             </div>
             <div>
-              <i onClick={() => deleteTuit(post)} className="material-icons">
+              <i
+                onClick={() => deleteTuit(dispatch, post)}
+                className="material-icons"
+              >
                 close
               </i>
             </div>
@@ -117,7 +122,7 @@ const TuitListItem = ({
               ></iframe>
             )}
           </div>
-          <TuitStats tuit={post} />
+          {<TuitStats tuit={post} />}
         </div>
       </div>
     </>
