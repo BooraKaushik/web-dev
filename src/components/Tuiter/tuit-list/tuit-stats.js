@@ -29,6 +29,22 @@ const TuitStats = ({ tuit }) => {
         ></i>
         <span className={` wd-color-gray wd-icon-number`}>{tuit.likes}</span>
       </div>
+      <div
+        onClick={() =>
+          updateTuit(dispatch, {
+            ...tuit,
+            dislikes: tuit.dislikes + 1,
+          })
+        }
+        className="wd-flex"
+      >
+        <i
+          className={`${
+            tuit.dislikes ? " wd-color-pink " : "wd-color-gray "
+          }fa fa-thumbs-down`}
+        ></i>
+        <span className={` wd-color-gray wd-icon-number`}>{tuit.dislikes}</span>
+      </div>
       <div className="wd-flex">
         <i className="material-icons wd-color-gray" style={{ margin: "auto" }}>
           file_upload
