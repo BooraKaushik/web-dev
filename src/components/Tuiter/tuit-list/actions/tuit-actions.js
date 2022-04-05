@@ -1,4 +1,3 @@
-import axios from "axios";
 import * as service from "../../../services/tuit-service";
 
 export const CREATE_TUIT = "CREATE_TUIT";

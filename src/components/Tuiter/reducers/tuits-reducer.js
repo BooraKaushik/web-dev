@@ -3,7 +3,7 @@ import {
   DELETE_TUIT,
   FIND_ALL_TUITS,
   UPDATE_TUIT,
-} from "../tuit-list/actions/tuits-actions";
+} from "../tuit-list/actions/tuit-actions";
 import tuits from "../tuit-list/tuits.json";
 
 const tuitReducer = (state = tuits, action) => {

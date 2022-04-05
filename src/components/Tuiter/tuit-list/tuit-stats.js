@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { updateTuit } from "./actions/tuits-actions";
+import { updateTuit } from "./actions/tuit-actions";
 
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();

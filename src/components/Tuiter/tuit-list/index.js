@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import TuitListItem from "./tuit-list-item";
 import { useEffect } from "react";
-import { findAllTuits } from "./actions/tuits-actions";
+import { findAllTuits } from "./actions/tuit-actions";
 
 const TuitList = () => {
   const tuits = useSelector((state) => state.tuitReducer);
