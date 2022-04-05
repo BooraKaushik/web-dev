@@ -1,33 +1,33 @@
 import { useDispatch } from "react-redux";
-import { updateTuit } from "./actions/tuits-actions";
 
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();
+  const likeTuit = () => {
+    dispatch({ type: "like-tuit", tuit });
+  };
   return (
     <div className="wd-icon">
       <div className="wd-flex">
         <i className=" wd-color-gray fa fa-comment"></i>
-        <span className="wd-icon-number wd-color-gray">{tuit.comments}</span>
+        <span className="wd-icon-number wd-color-gray">
+          {tuit.stats.comments}
+        </span>
       </div>
       <div className="wd-flex">
         <i className="material-icons wd-color-gray">loop</i>
-        <span className="wd-icon-number wd-color-gray">{tuit.retuits}</span>
+        <span className="wd-icon-number wd-color-gray">
+          {tuit.stats.retuits}
+        </span>
       </div>
-      <div
-        onClick={() =>
-          updateTuit(dispatch, {
-            ...tuit,
-            likes: tuit.likes + 1,
-          })
-        }
-        className="wd-flex"
-      >
+      <div onClick={() => likeTuit(tuit)} className="wd-flex">
         <i
           className={`${
-            tuit.likes ? " wd-color-pink " : "wd-color-gray "
+            tuit.liked ? " wd-color-pink " : "wd-color-gray "
           }fa fa-heart`}
         ></i>
-        <span className={` wd-color-gray wd-icon-number`}>{tuit.likes}</span>
+        <span className={` wd-color-gray wd-icon-number`}>
+          {tuit.stats.likes}
+        </span>
       </div>
       <div className="wd-flex">
         <i className="material-icons wd-color-gray" style={{ margin: "auto" }}>
