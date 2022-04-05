@@ -1,6 +1,5 @@
 import axios from "axios";
-const API_BASE = process.env.REACT_APP_API_BASE;
-const TUITS_API = `${API_BASE}/tuits`;
+const TUITS_API = "https://full-stack-developer-serve.herokuapp.com/api/tuits";
 
 export const createTuit = async (tuit) => {
   const response = await axios.post(TUITS_API, tuit);
