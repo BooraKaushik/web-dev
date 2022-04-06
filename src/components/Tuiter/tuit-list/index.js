@@ -7,9 +7,8 @@ const TuitList = () => {
   const tuits = useSelector((state) => state.tuitReducer);
   const dispatch = useDispatch();
   useEffect(() => {
-    // console.log("Test");
     findAllTuits(dispatch);
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
